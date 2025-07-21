@@ -4,20 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 1 - Elevvo Dashboard</title>
+    <title>Elevvo Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#" class="nav-links">Home</a></li>
-                <li><a href="#" class="nav-links">About</a></li>
-                <li><a href="#" class="nav-links">Services</a></li>
-                <li><a href="#" class="nav-links">Contact</a></li>
-            </ul>
+            <button class="toggle-btn" id="sidebarToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
         </nav>
 
         <aside class="sidebar">
@@ -25,15 +28,19 @@
                 <h2>Elevvo</h2>
             </div>
             <ul class="sidebar-menu">
-                <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-                <li><a href="#"><i class="fas fa-users"></i> Users</a></li>
-                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
-                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                <li><a href="#"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
+                <li><a href="#"><i class="fas fa-users"></i> <span>Users</span></a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> <span>Settings</span></a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a></li>
             </ul>
         </aside>
+
+        <main class="main-content">
+            <h1>Welcome to Elevvo Dashboard</h1>
+        </main>
     </header>
 
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
